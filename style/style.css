@@ -2,18 +2,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
 }
 .titulo {
     text-shadow: 0 0 20px #a673ff;
+    color: #fff;
 }
+
 .subtitulo {
     font-size: 20px;
     opacity: 0.85;
+    color: #fff;
 }
+
 .sombra {
     box-shadow: 0 0 20px #b47aff;
 }
@@ -39,9 +39,11 @@ body {
     cursor: pointer;
     transition: 0.2s ease;
 }
+
 .opcao-item:hover {
     transform: scale(1.03);
 }
+
 .opcaoSelecionada {
     background: #7a32ff !important;
     color: #fff !important;
@@ -53,7 +55,9 @@ body {
     border: none !important;
     font-weight: 600;
     transition: 0.15s ease;
+    color: white !important;
 }
+
 .botaoModern:hover {
     background: #9f53ff !important;
     transform: scale(1.02);
@@ -61,9 +65,67 @@ body {
 .resultado {
     margin-top: 40px;
     text-shadow: 0 0 10px #cfaaff;
+    color: #fff;
 }
-@media (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
+body.tema-claro {
+    background-color: #ffffff;
+    color: #222;
+}
+
+body.tema-claro .titulo,
+body.tema-claro .subtitulo,
+body.tema-claro label,
+body.tema-claro p,
+body.tema-claro h2,
+body.tema-claro h3 {
+    color: #222 !important;
+}
+
+body.tema-claro .inputModern {
+    background: rgba(0, 0, 0, 0.1);
+    color: #222;
+    border-color: #a978ff;
+}
+
+body.tema-claro .opcao-item {
+    background: rgba(0, 0, 0, 0.05);
+    color: #222;
+    border-color: #a978ff;
+}
+
+body.tema-claro .opcaoSelecionada {
+    background: #7a32ff;
+    color: #fff !important;
+}
+
+body.tema-claro .botaoModern {
+    color: white !important;
+}
+body.tema-escuro {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.tema-escuro .titulo,
+body.tema-escuro .subtitulo,
+body.tema-escuro p,
+body.tema-escuro label,
+body.tema-escuro h2,
+body.tema-escuro h3 {
+    color: white;
+}
+
+body.tema-escuro .inputModern {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+body.tema-escuro .opcao-item {
+    background: rgba(255, 255, 255, 0.12);
+    color: #eeddff;
+}
+
+body.tema-escuro .opcaoSelecionada {
+    background: #7a32ff;
+    color: #fff !important;
 }
